@@ -515,6 +515,84 @@ h2 {
   color: var(--text-primary);
 }
 
+/* Partners Section */
+.partners {
+  padding: 8rem 2rem;
+}
+
+.partner-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-top: 4rem;
+}
+
+.partner-card {
+  flex: 1 1 340px;
+  max-width: 520px;
+  background: var(--bg-secondary);
+  padding: 2.5rem;
+  border-radius: 2px;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.8s ease;
+}
+
+.partner-card.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.partner-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, var(--accent), transparent);
+}
+
+.partner-label {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.7rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 1rem;
+}
+
+.partner-card h3 {
+  font-size: 1.6rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+.partner-card p {
+  color: var(--text-secondary);
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+}
+
+.partner-link {
+  margin-top: auto;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.8rem;
+  letter-spacing: 0.05em;
+  color: var(--accent);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.partner-link:hover {
+  color: var(--text-primary);
+}
+
 /* CTA Section */
 .cta {
   text-align: center;

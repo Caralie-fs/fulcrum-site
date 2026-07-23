@@ -29,7 +29,7 @@ const observer = new IntersectionObserver((entries) => {
 }, observerOptions)
 
 // Observe all animated elements
-document.querySelectorAll('.mission-item, .stat, .model-card, .domain-item, .founder-card').forEach((el) => {
+document.querySelectorAll('.mission-item, .stat, .model-card, .domain-item, .founder-card, .partner-card').forEach((el) => {
   const siblings = el.parentElement.children
   const siblingIndex = Array.from(siblings).indexOf(el)
   el.dataset.delay = siblingIndex
