@@ -310,58 +310,6 @@ h2 {
   display: block;
 }
 
-/* Fellowship Model Section */
-.model-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 2rem;
-  margin-top: 4rem;
-}
-
-.model-card {
-  background: var(--bg-secondary);
-  padding: 3rem;
-  border-radius: 2px;
-  position: relative;
-  overflow: hidden;
-  opacity: 0;
-  transform: translateY(40px);
-  transition: all 0.8s ease;
-}
-
-.model-card.visible {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-.model-card::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 2px;
-  background: linear-gradient(90deg, var(--accent), transparent);
-}
-
-.model-number {
-  font-family: 'JetBrains Mono', monospace;
-  font-size: 0.85rem;
-  color: var(--accent);
-  margin-bottom: 1rem;
-}
-
-.model-card h3 {
-  font-size: 1.5rem;
-  font-weight: 500;
-  margin-bottom: 1rem;
-}
-
-.model-card p {
-  color: var(--text-secondary);
-  line-height: 1.8;
-}
-
 /* Domains Section */
 .domains {
   background: linear-gradient(135deg, var(--bg-primary) 0%, var(--bg-secondary) 100%);
@@ -630,11 +578,6 @@ footer {
 
   .stat-grid {
     flex-direction: column;
-    gap: 2rem;
-  }
-
-  .model-grid {
-    grid-template-columns: 1fr;
     gap: 2rem;
   }
 
