@@ -32,6 +32,7 @@ We recruit talented engineers and AI researchers to work alongside scientists, t
 
 - Alex Morcos, Co-Founder - Previously co-founded Hudson River Trading and Chaincode Labs
 - Adam Jonas, Co-Founder - CEO at Chaincode Labs
+- Arfon Smith, Senior Program Manager - Co-founded the Zooniverse, created the Journal of Open Source Software, led the Data Science Mission Office at STScI, and was Director of Product for Copilot at GitHub
 
 ## For Technologists
 
